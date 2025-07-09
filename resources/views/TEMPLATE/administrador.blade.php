@@ -46,7 +46,7 @@
                         @if(Auth::user()->imagen == "NULL")
                             /images/user.jpg
                         @else
-                            /images/Usuarios/{{ Auth::user()->imagen }}
+                            /images/{{ Auth::user()->imagen }}
                         @endif
                         " alt="">
                     </div>
@@ -148,7 +148,7 @@
                                             @if(Auth::user()->imagen == "NULL")
                                                 /images/user.jpg
                                             @else
-                                                /images/Usuarios/{{Auth::user()->imagen}}
+                                                /images/{{Auth::user()->imagen}}
                                             @endif
                                         " alt="">
                                     </div>
