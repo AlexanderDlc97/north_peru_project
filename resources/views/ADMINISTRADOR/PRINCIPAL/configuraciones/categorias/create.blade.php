@@ -30,9 +30,7 @@
                             <label for="medida_id">Rubro<span class="text-danger">*</span></label>
                             <select name="rubro_id" id="rubro_ids" class="form-select select2_bootstrap_2" data-placeholder="Seleccione" style="width:100%" required>
                                 <option value="" selected="selected" hidden="hidden"></option>
-                                    @foreach($admin_rubros as $admin_rubro)
-                                        <option value="{{$admin_rubro->id }}">{{ $admin_rubro->name }}</option>
-                                    @endforeach 
+                                    
                             </select>
                         </div>
                     </div>

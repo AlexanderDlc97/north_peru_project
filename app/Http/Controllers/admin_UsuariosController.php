@@ -42,10 +42,8 @@ class admin_UsuariosController extends Controller
     {
         $tiposdocumento = Documento::all();
         $roles = Role::where('estado', 'Activo')->where('id', '!=', '1')->get();
-        $sedes = Sede::where('estado', 'Activo')->get();
         $ubigeos = Ubigeo::all();
-        $sector = Sector::where('estado', 'Activo')->get();
-        return view('ADMINISTRADOR.PRINCIPAL.configuraciones.usuarios.create', compact('tiposdocumento', 'roles', 'ubigeos', 'sector', 'sedes'));
+        return view('ADMINISTRADOR.PRINCIPAL.configuraciones.usuarios.create', compact('tiposdocumento', 'roles', 'ubigeos'));
     }
 
     /**

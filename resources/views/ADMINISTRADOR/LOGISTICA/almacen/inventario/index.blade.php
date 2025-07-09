@@ -109,7 +109,6 @@
         </div>
     </div>
 {{-- Fin contenido --}}
-@include('ADMINISTRADOR.LOGISTICA.almacen.inventario.reporte_modal_excel')  
 @foreach ($almacen as $almacenes)
     @include('ADMINISTRADOR.LOGISTICA.almacen.inventario.show')
 @endforeach

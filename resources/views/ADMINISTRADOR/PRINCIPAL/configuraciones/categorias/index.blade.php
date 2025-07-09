@@ -79,7 +79,7 @@
                                                 </button>
                                                 <ul class="dropdown-menu">                                                
                                                     <li class="dropdown-item">
-                                                    <button class="bg-transparent border-0 px-0 mx-0" data-bs-toggle="modal" data-id="{{$admin_categoria->slug}}" id="edit_button" data-bs-target="#edit_categoria{{$admin_categoria->slug}}"><i class="bi bi-pencil-square me-2"></i>Editar</button>
+                                                    <button class="bg-transparent border-0 px-0 mx-0" data-bs-toggle="modal" data-id="{{$admin_categoria->slug}}" id="edit_button" data-bs-target=""><i class="bi bi-pencil-square me-2"></i>Editar</button>
                                                     </li>  
                                                     <li class="dropdown-item">
                                                         <form method="POST" action="{{ route('admin-categorias.destroy',$admin_categoria->slug) }}" class="form-delete">
@@ -104,9 +104,7 @@
         </div>
     </div>
     @include('ADMINISTRADOR.PRINCIPAL.configuraciones.categorias.create')
-    @foreach ($admin_categorias as $admin_categoria)
-        @include('ADMINISTRADOR.PRINCIPAL.configuraciones.categorias.edit')
-    @endforeach
+   
 {{-- Fin contenido --}}
 @endsection
 @section('js')
